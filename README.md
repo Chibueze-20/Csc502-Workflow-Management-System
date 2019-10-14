@@ -1,2 +1,5 @@
 # csc502-Workflow-management-system
-A departmental workflow management system for undergraduate students with the department of computer sciences university of Lagos as a case study.
+
+Design and Automation of A Departmental Work-Flow Management System for Undergraduate Students : Case Study - Department of Computer Sciences, University of Lagos
+
+This project is implemented with Microsoft C#.
