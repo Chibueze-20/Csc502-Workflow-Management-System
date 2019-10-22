@@ -19,13 +19,39 @@ namespace Workflow_management_system
                bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                            "~/Scripts/modernizr-*"));
 
-               bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+               bundles.Add(new ScriptBundle("~/bundles/admin").Include(
+                         "~/Content/admin/plugins/bower_components/jquery/dist/jquery.min.js",
+                         "~/Content/admin/bootstrap/dist/js/tether.min.js",
+                         "~/Content/admin/bootstrap/dist/js/bootstrap.min.js",
+                         "~/Content/admin/plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js",
+                         "~/Content/admin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js",
+                         "~/Scripts/adminjs/jquery.slimscroll.js",
+                         "~/Scripts/adminjs/waves.js",
+                         "~/Content/admin/plugins/bower_components/raphael/raphael-min.js",
+                         "~/Content/admin/plugins/bower_components/morrisjs/morris.js",
+                         "~/Content/admin/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js",
+                         "~/Content/admin/plugins/bower_components/peity/jquery.peity.min.js",
+                         "~/Content/admin/plugins/bower_components/peity/jquery.peity.init.js",
+                         "~/Scripts/adminjs/custom.min.js",
+                         "~/Scripts/adminjs/dashboard1.js",
+                         "~/Content/admin/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"));
+
+              bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                          "~/Scripts/bootstrap.js",
                          "~/Scripts/respond.js"));
 
-               bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/css").Include(
                          "~/Content/bootstrap.css",
                          "~/Content/site.css"));
-          }
+
+               bundles.Add(new StyleBundle("~/Content/admin").Include(
+                       "~/Content/admin/bootstrap/dist/css/bootstrap.min.css",
+                       "~/Content/admin/plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css",
+                       "~/Content/admin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css",
+                       "~/Content/admin/plugins/bower_components/morrisjs/morris.css",
+                      "~/Content/admin/css/animate.css",
+                      "~/Content/admin/css/style.css",
+                      "~/Content/admin/css/colors/megna.css"));
+        }
      }
 }
