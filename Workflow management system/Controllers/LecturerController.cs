@@ -287,6 +287,39 @@ namespace Workflow_management_system.Controllers
             }
         }
 
+        public ActionResult SendMail()
+        {
+            if (!ValidateUser())
+                return RedirectToAction("LogIn", "Home");
+
+            try
+            {
+                return View();
+            }
+            catch (Exception ex)
+            {
+                return View("../Home/LogIn");
+            }
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult SendMail()
+        {
+            if (!ValidateUser())
+                return RedirectToAction("LogIn", "Home");
+
+            try
+            {
+                return View();
+            }
+            catch (Exception ex)
+            {
+                return View("../Home/LogIn");
+            }
+        }
+
 
         //==========================Private Functions=======================================================
 
