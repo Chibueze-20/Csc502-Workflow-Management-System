@@ -3850,6 +3850,13 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+    <Content Include="Views\Lecturer\AllRequests.cshtml" />
+    <Content Include="Views\Lecturer\PendingRequests.cshtml" />
+    <Content Include="Views\Lecturer\AcceptedRequests.cshtml" />
+    <Content Include="Views\Lecturer\RejectedRequests.cshtml" />
+    <Content Include="Views\Lecturer\ViewRequest.cshtml" />
+    <Content Include="Views\Lecturer\EditRequests.cshtml" />
+    <Content Include="Views\Lecturer\SendMail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
