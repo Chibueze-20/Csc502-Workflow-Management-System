@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Workflow_management_system.Models.User>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lecturers</title>
+</head>
+<body>
+    
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.role)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.level)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.role)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.level)
+            </td>
+            <td>
+                @Html.ActionLink("AssignCourse", "Assign", new { id=item.ID }) 
+             </td>  
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
