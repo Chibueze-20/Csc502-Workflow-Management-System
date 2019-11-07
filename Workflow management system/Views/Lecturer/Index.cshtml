@@ -1,0 +1,112 @@
+﻿@{
+      Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Lecturer";
+}
+<!-- Page Content -->
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <br />
+        <!--row -->
+        <div class="row">
+                <div class="white-box">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label for="from-date" class="control-label">From: </label>
+                                <div class="input-group">
+                                    <input id="from-date" name="date_from" type="text" class="form-control mydatepicker" placeholder="mm/dd/yyyy">
+                                    <span class="input-group-addon"><i class="icon-calender"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="to-date" class="control-label">To: </label>
+                                <div class="input-group">
+                                    <input id="to-date" name="date_to" type="text" class="form-control mydatepicker" placeholder="mm/dd/yyyy">
+                                    <span class="input-group-addon"><i class="icon-calender"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-custom"> <i class="fa fa-check"></i> Lookup</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="white-box">
+                    <div class="r-icon-stats">
+                        <i class="fas fa-tasks bg-success"></i>
+                        <div class="bodystate">
+                            <h4>20</h4>
+                            <span class="text-muted">All  Requests</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="white-box">
+                    <div class="r-icon-stats">
+                        <i class="fas fa-tasks bg-danger"></i>
+                        <div class="bodystate">
+                            <h4>5</h4>
+                            <span class="text-muted">Pending  Requests</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="white-box">
+                    <div class="r-icon-stats">
+                        <i class="fas fa-tasks bg-success"></i>
+                        <div class="bodystate">
+                            <h4>15</h4>
+                            <span class="text-muted">Accepted  Requests</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="white-box">
+                    <div class="r-icon-stats">
+                        <i class="fas fa-tasks bg-danger"></i>
+                        <div class="bodystate">
+                            <h4>3</h4>
+                            <span class="text-muted">Rejected  Requests</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row -->
+        <!-- /row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="white-box">
+                    <h3 class="box-title m-b-0">Pending Requests</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Request</th>
+                                    <th>Date Created</th>
+                                    <th>Student</th>
+                                </tr>
+                            </thead>
+                            <tbody id="created">
+                                <!-- fill up with server data -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- .right-sidebar -->
+        <!-- /#page-wrapper -->
+    </div>
+</div>
